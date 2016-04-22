@@ -1,0 +1,184 @@
+% arara: xelatex
+% arara: biber
+% arara: xelatex
+
+\documentclass[]{friggeri-cv}
+
+%------------
+\usepackage{enumitem}
+\renewenvironment{entrylist}{%
+  \begin{itemize}[leftmargin=1in] %[leftmargin=*,align=left,itemindent=-\dimexpr\labelwidth+\labelindent+\labelsep\relax]
+}{%
+  \end{itemize}
+}
+\renewcommand{\bfseries}{\headingfont\color{headercolor}}
+\renewcommand{\entry}[4]{%
+  \item[#1]
+    \textbf{#2}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+    #4\vspace{\parsep}%
+  }
+%-------
+
+\begin{document}
+\header{Mikiko}{Bazeley}
+       {Operations Analyst | Data Visualization Specialist}
+% In the aside, each new line forces a line break
+\begin{aside}
+\section{skills}
+R-
+gglot, dplyr, tidyr
+Excel-
+vlookups, pivot tables, formulas
+SQL
+HTML, CSS
+Python
+\section{programs}
+Tableau
+Salesforce
+MySQL, OracleSQ, MSSQL
+ArcGIS,QGIS
+Excel
+\section{concentration}
+ quantitative analysis
+ data management
+ reporting
+data wrangling
+  \section{references available}
+\href{https://www.linkedin.com/in/michaeloverell}{Michael Overell}
+\href{https://www.linkedin.com/in/jennsteele}{Jenn Steele}
+\href{https://www.linkedin.com/pub/alfred-louie/a5/a46/281}{Alfred Louie} 
+ \section{connect}
+\href{https://www.linkedin.com/in/mikikobazeley}{linkedin}
+\href{http://mikikobazeley.github.io}{personal site}
+\href{https://angel.co/mikiko-bazeley}{angel.co}
+\href{https://github.com/MMBazel}{github}
+  \section{education}
+B.A. Economics
+2013
+UC San Diego
+  \section{about}
+  home:
+    SF, CA 94133
+    ~
+    mobile: 
+    \href{tel:14159489641}{415.948.9641}
+    ~
+    email:
+    \href{mailto:mmbazel@gmail.com}{mmbazel@gmail.com}
+\end{aside}
+
+\section{objective}
+Use data analysis and operations knowledge to catalyze revenue
+growth and transform the consumer experience
+
+\section{experience}
+
+\begin{entrylist}
+%-------
+  \entry
+    {07/14---curr.}
+    {Operations Specialist}
+    {Digimarc, San Mateo}
+    {\textit{Summary}: Use data analysis tools and visualization in order to assist rights holders with protection and enforcement through operationalizing efficiency in value-added products and services.\\ 
+
+\textbf {Product Analysis}: 
+\begin{itemize}
+\item Utilized open source tools such as R (with packages ggplot2, dplyr, knitr) in order to provide insight for management team and key clients into the efficacy of company product. 
+\item Responsible for analysis projects from data warehouse querying (MySQL/MSSQL/SQL Server) to exploration to presentation. 
+\end{itemize}
+
+\textbf {Operations Support}:  
+\begin{itemize}
+\item Utilized Sharepoint to create and populate knowledge base for internal stakeholders with original training material for sales education. 
+\item Maintain internal Sharepoint sites to empower management to store and create protocols and standards for operations and sales. 
+\end{itemize}
+
+\textbf {Data Visualization}: 
+\begin{itemize}
+\item Created and scripted ad-hoc customer and operations reports for use in marketing collateral and relationship management using R, excel, Gliffy. 
+\item Designed, wireframed and created proof-of-concept visual reports. 
+\end{itemize}
+
+
+
+\textbf {Salesforce administration}: 
+\begin{itemize}
+\item Created on-boarding process and accompanying documentation to increase user adoption rates, inform the implementation road map, and increase sales reporting accuracy.
+\item Integrated third party automation tools such as Pardot, InsideView, LinkedIn Navigator with sandbox Salesforce instance to automate sales cycle. 
+\item Utilized Dataloader, excel, and R to migrate and clean data between Salesforce and Dynamic instances.
+\end{itemize}
+}
+  
+
+%-------
+
+  \entry
+    {07/14---curr.}
+    {Sales Operations Lead}
+    {RecruitLoop, San Francisco}
+    {\textit{Summary}: Managed lead generation and infrastructure scaling for sales and growth team at early-stage recruiting startup.\\
+
+\textbf {Salesforce Administration}: 
+\begin{itemize}
+\item Customized Salesforce to create objects, applications, reports and dashboards to enable the sales team to meet their quotas.
+\end{itemize}
+
+\textbf {Research Team Management}:
+\begin{itemize}
+\item Hired and trained team of 10 freelancers, as well as handled billing and performance tracking, in order to scale volume of lead generation from 200 (leads/rep/month) to 2000 (leads/rep/month).
+\end{itemize}
+
+\textbf {Sales Operations}: 
+\begin{itemize}
+\item Researched, identified and integrated products for outbound sales that decreased cost of lead acquisition by half while scaling volume (including conducting vendor negotiations and intiating beta trials)
+\end{itemize}
+
+\textbf {Email Marketing}: 
+\begin{itemize}
+\item A/B tested subject line, body text and send time to increase email engagement rates by 30 percent, enabling sales team to identify and connect with prospects, while scaling email volume).
+\end{itemize}
+}
+
+%-------
+   \entry
+    {12/13---04/14}
+    {Business Operations and Accounts Manager}
+    {eSalon, San Francisco}
+    {
+\textit{Summary}: Assisted management with record keeping and hospitality.\\ 
+
+\textbf {Account Management}: 
+\begin{itemize}
+\item Managed billing, business communications, and account creation for clients of team of 10 employees.
+\end{itemize}
+
+\textbf {Operations}: 
+\begin{itemize}
+\item Provided great customer service and cultivated client relationships by leading employee training and maintaining employee calendars.
+\end{itemize}
+%-------
+}
+\end{entrylist}	
+
+\section{projects}
+\begin{entrylist}
+%-------
+  \entry
+    {1/15}
+    {Consultant}
+    {FirstJob}
+    {\textit{Summary}: Laid foundation for an outbound sales process.\\ 
+
+\textbf {Referral}:\\
+\href{https://www.linkedin.com/in/brettbazzini}{Brett Bazzini: Head of Sales at FirstJob,Inc. during this time}\\
+\textbf {Referral}:\\
+\href{https://www.linkedin.com/in/braydanyoung}{Braydan Young: Vice President of Business Development at First Job,Inc. during this time}
+}
+  
+
+%-------
+	
+\end{entrylist}	
+\end{document}
